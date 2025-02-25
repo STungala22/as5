@@ -8,7 +8,8 @@
     <button id="white">White</button>
     <button id="black">Black</button>
     <button id="random">Random</button>
-    
+    <button id="yellow">Yellow</button>
+
     <script>
 
         function switchToBlack()
@@ -29,6 +30,16 @@
 
         let white = document.getElementById("white");
         white.addEventListener("click", switchToWhite );
+        
+	function switchToYellow()
+	{
+	    let body_element = document.getElementById("body_element");
+	    body_element.style = "background-color:yellow";
+	}
+	
+	let yellow = document.getElementById("yellow");
+	yellow.addEventListener("click", switchToYellow);
+
 
         function switchToRandom()
         {
